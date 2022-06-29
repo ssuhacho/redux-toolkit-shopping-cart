@@ -21,7 +21,7 @@ const cartSlice = createSlice({
   initialState,
   reducers: {
     clearCart: (state) => {
-      state.cartItems = [];
+      state.cartItems = []; 
     },
     removeItem: (state, action) => {
       // console.log(action);
@@ -57,7 +57,7 @@ const cartSlice = createSlice({
         state.cartItems = action.payload;
     },
     [getCartItems.rejected] : (state) => {
-        state.isLoading = false;
+        state.isLoading = false; 
     }
   }
 });
